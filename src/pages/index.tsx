@@ -37,8 +37,9 @@ import {
   useCurrentUser,
   useIsUserDataLoaded,
 } from '../context/UserDataContext/UserDataContext';
+import ActiveCardsHome from '../components/activeCardsHome';
 
-const containerClasses = 'max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8';
+const containerClasses = 'max-w-6xl mx-auto px-4 sm:px-6 lg:px-8';
 const headerClasses =
   'text-4xl md:text-5xl 2xl:text-6xl font-black text-black dark:text-white';
 const headerClassesNoText = 'text-4xl md:text-5xl 2xl:text-6xl font-black';
@@ -84,8 +85,32 @@ export default function IndexPage({ path }): JSX.Element {
       </div>
 
       {/* Begin Hero */}
-     <div className="relative overflow-hidden -mt-16 pt-48 bg-gray-50 dark:bg-black transition-colors duration-500">
-      {/* The Glows */}
+     <div className="relative overflow-hidden -mt-16 pt-48 bg-gray-50 dark:bg-gradient-to-b dark:from-black dark:via-black dark:to-[#1a0d00] transition-colors duration-500">
+
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 z-0 [mask-image:radial-gradient(ellipse_at_center,white_20%,transparent_75%)]">
+          <svg className="h-full w-full opacity-[0.15] dark:opacity-[0.4]" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="grid-pattern" width="50" height="50" patternUnits="userSpaceOnUse">
+                {/* We use a brighter orange-400 and a 1px stroke for visibility */}
+                <path 
+                  d="M 50 0 L 0 0 0 50" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="1" 
+                  className="text-orange-400/60 dark:text-orange-500/80" 
+                />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+          </svg>
+        </div>
+      {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-orange-500/10 blur-[120px] rounded-full" />
+      */}
+      </div>
+
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(251,146,60,0.08)_0%,transparent_70%)] pointer-events-none" />
+
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-orange-500/20 blur-[120px] rounded-full" />
       <div className="absolute bottom-[20%] right-[-5%] w-[30%] h-[30%] bg-purple-500/10 blur-[100px] rounded-full" />
       
@@ -208,7 +233,7 @@ export default function IndexPage({ path }): JSX.Element {
       {/* End Hero */}
 
       {/* Learn Contest Math. Efficiently. */}
-     <div className="bg-white dark:bg-[#0f0a05] transition-colors duration-500">
+     <div className="dark:bg-gradient-to-b dark:from-[#e85d04]/10 dark:via-[#e85d04]/20 dark:to-[#e85d04]/30 transition-colors duration-500">
       <div className="h-12 sm:h-20 md:h-36 2xl:h-48"></div>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-orange-900/20 blur-[150px] rounded-full pointer-events-none" />
 
@@ -230,7 +255,6 @@ export default function IndexPage({ path }): JSX.Element {
                   title="Curated Resources"
                   blobClasses="bg-sky-200 dark:bg-sky-800 hidden xl:block"
                   feature={<ResourcesFeature />}
-                  featurePosition="left"
                 >
                   Learn new topics from a vetted list of high-quality resources. If
                   one resource doesn't click, look at another!
@@ -244,7 +268,6 @@ export default function IndexPage({ path }): JSX.Element {
                   title="Extensive Problemsets"
                   blobClasses="bg-purple-300 dark:bg-purple-800"
                   feature={<ProblemsetsFeature />}
-                  featurePosition="right"
                 >
                   Practice each topic with extensive problemsets and solutions
                   covering a wide range of difficulties.
@@ -260,7 +283,6 @@ export default function IndexPage({ path }): JSX.Element {
             title="Progress Tracking"
             blobClasses="bg-orange-200 dark:bg-orange-800"
             feature={<ProgressTrackingFeature />}
-            featurePosition="left"
             fade="none"
             classes='col-start-1 col-end-4'
           >
@@ -285,7 +307,6 @@ export default function IndexPage({ path }): JSX.Element {
                   />
                 </div>
               }
-              featurePosition="right"
               fade="none"
             >
               <span className="mb-4 block md:mb-8">
@@ -311,117 +332,75 @@ export default function IndexPage({ path }): JSX.Element {
       </div>
       {/* End Learn contest math. */}
 
-      <div className="bg-gray-100 dark:bg-black">
+     <div className="relative text-center overflow-hidden bg-gradient-to-b from-[#e85d04]/30 via-[#3d1a04] to-[#e85d04]/40 transition-colors duration-500">
+        <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-orange-400/20 to-transparent"/>
         <div className="h-16 md:h-20 2xl:h-36"></div>
-        <div className={containerClasses}>
-          <div className="dark:hidden">
-            <h1 className={classNames(headerClasses)}>Trusted by thousands</h1>
-          </div>
-          <div className="invisible h-0 dark:visible dark:h-auto">
-            <GlowingText
-              className={classNames(headerClassesNoText, 'text-white')}
-              extraGlow
-            >
-              Trusted by thousands.
-            </GlowingText>
-          </div>
 
-          <div className={headerSubtextSpacerClasses}></div>
+        <div className={classNames(
+        containerClasses, 
+        'relative mx-auto w-11/12 md:w-3/4 rounded-4xl py-20 px-8 transition-all duration-500 overflow-hidden',
+        'bg-linear-to-br from-white/95 via-[#f4dcbf] to-[#fb923c] backdrop-blur-md', 
+        'shadow-[0_20px_60px_-15px_rgba(249,115,22,0.3)] border border-white/60'
+      )}>
+      
+      <div className="absolute inset-0 opacity-[0.15] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] pointer-events-none">
+          <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-900" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+          </svg>
+        </div>
 
-          <p className={subtextClasses}>
-            This guide is written by{' '}
-            <GradientText>top math contest performers</GradientText> and
-            educators who care about clean, rigorous solutions.
-          </p>
+    <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-orange-400/20 blur-[100px] rounded-full pointer-events-none" />
+
+      <div className="absolute top-0 left-0 right-0 h-20 bg-linear-to-b from-white/40 to-transparent rounded-t-4xl pointer-events-none" />
+      <div className="relative z-10">
+            <div className="dark:hidden">
+              <h1 className={classNames(headerClasses, "text-orange-900")}>Strealine your Learning</h1>
+            </div>
+            <div className="invisible h-0 dark:visible dark:h-auto">
+              <h2
+                className={classNames(headerClassesNoText, 'text-orange-900 !font-bold')}
+              >
+                Streamline your Learning
+              </h2>
+            </div>
+
           <div className="h-4 2xl:h-12"></div>
 
-          <TrustedBy />
+          <p className={classNames(subtextClasses, 'text-center mx-auto w-11/12 md:w-3/4 !text-[#62210b] font-medium')}>
+            This guide is written by{' '}
+            <span className="text-[#9a3412]">top math contest performers</span> and
+            educators who care about clean, rigorous solutions.
+          </p>
+          <div className="h-16 2xl:h-12"></div>
+
+          <div className="brightness-50 contrast-125 opacity-70">
+            <TrustedBy />
+          </div>
 
           <div className="h-8 md:h-12 2xl:h-16"></div>
 
           <div className="group relative inline-block">
-            <GlowingRing>
-              <Link
-                to="/dashboard"
-                className={classNames(whiteButtonClasses, 'inline-block')}
-              >
-                View Guide
-              </Link>
-            </GlowingRing>
+            <div className="absolute -inset-1 bg-orange-600/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition duration-500"></div>
+            <Link
+              to="/dashboard"
+              className="relative inline-flex items-center px-12 py-4 bg-[#2a0e06] text-orange-50 rounded-full font-bold hover:scale-105 hover:bg-black transition-all shadow-2xl active:scale-95"
+            >
+              View Guide
+              <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
           </div>
+        </div>
         </div>
         <div className="h-16 md:h-20 2xl:h-36"></div>
       </div>
-
-      <div className="bg-white dark:bg-gray-900">
-        <div className="h-16 md:h-20 2xl:h-36"></div>
-        <div className="px-4 sm:px-6 lg:px-8 2xl:px-16">
-          <h2 className={classNames(headerClasses, 'md:text-center')}>
-            Built by the USAMO Guide community.
-          </h2>
-          <div className="h-4 md:h-8"></div>
-          <p className={classNames(subtextClasses, 'mx-auto md:text-center')}>
-            Here are a few resources and study tools that pair well with the
-            guide.
-          </p>
-
-          <div className="2xl:24 h-12 md:h-16"></div>
-
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:gap-8 2xl:grid-cols-3">
-            <CPIProjectCard
-              title="Weekly Problem Sessions"
-              icon={AcademicCapIcon}
-              iconClasses="from-fuchsia-500 to-purple-600"
-              url="/groups"
-            >
-              Join guided sessions focused on problem solving, solution
-              writing, and proof critique.
-            </CPIProjectCard>
-            <CPIProjectCard
-              title="AoPS Wiki Archive"
-              icon={TerminalIcon}
-              iconClasses="from-orange-400 to-pink-600"
-              url="https://artofproblemsolving.com/wiki/index.php/Main_Page"
-            >
-              Official statements and solutions for AMC/AIME/USAMO, all in one
-              place.
-            </CPIProjectCard>
-            <CPIProjectCard
-              title="Study Groups"
-              icon={AcademicCapIcon}
-              iconClasses="from-green-400 to-cyan-500"
-              url="/groups"
-            >
-              A learning management system for clubs, classes, and teams.
-            </CPIProjectCard>
-            <CPIProjectCard
-              title="Mock Contests"
-              icon={UserGroupIcon}
-              iconClasses="from-purple-500 to-indigo-500"
-              url="/groups"
-            >
-              Run timed sets modeled after AMC/AIME/USAMO to build endurance.
-            </CPIProjectCard>
-            <CPIProjectCard
-              title="Proofwriting Clinics"
-              icon={ChartBarIcon}
-              iconClasses="from-cyan-400 to-sky-500"
-              url="/groups"
-            >
-              Short workshops that emphasize rigor, structure, and clarity.
-            </CPIProjectCard>
-            <CPIProjectCard
-              title="Mentorship"
-              icon={CogIcon}
-              iconClasses="from-yellow-400 to-orange-500"
-              url="/groups"
-            >
-              Pair up with mentors for feedback on solutions and study plans.
-            </CPIProjectCard>
-          </div>
-        </div>
-        <div className="h-16 md:h-20 2xl:h-36"></div>
-      </div>
+      <ActiveCardsHome/>
 
       <div className="bg-gray-100 dark:bg-black">
         <div className="h-16 md:h-20 xl:h-36 2xl:h-48"></div>

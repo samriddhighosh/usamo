@@ -19,7 +19,6 @@ export const Feature = ({
   classes:string;
 }): JSX.Element => {
   return (
-    /* Main Container: Vertical stack with SaaS-style card styling */
     <div className={classNames(
         "flex flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white/50 p-6 shadow-sm backdrop-blur-sm dark:border-white/10 dark:bg-white/5 md:p-10",
         classes // This is your extra variable or prop
@@ -28,7 +27,7 @@ export const Feature = ({
       <div className="mb-8 max-w-2xl">
         <div
           className={classNames(
-            'mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br text-white shadow-lg',
+            'mb-6 flex h-12 w-12 items-center justify-center rounded-xl text-white shadow-lg',
             iconClasses
           )}
         >
