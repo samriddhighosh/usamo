@@ -1,0 +1,35 @@
+{
+  "MODULE_ID": "advanced-algebra",
+  "practice": [
+    {
+      "uniqueId": "amc10-2019a-18",
+      "name": "Problem 18 (2019 AMC 10A)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2019_AMC_10A_Problems/Problem_18",
+      "source": "AMC 10",
+      "difficulty": "Hard",
+      "isStarred": true,
+      "tags": [
+        "Quadratics",
+        "Systems"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "amc12-2017a-15",
+      "name": "Problem 15 (2017 AMC 12A)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2017_AMC_12A_Problems/Problem_15",
+      "source": "AMC 12",
+      "difficulty": "Hard",
+      "isStarred": false,
+      "tags": [
+        "Polynomials",
+        "Symmetry"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

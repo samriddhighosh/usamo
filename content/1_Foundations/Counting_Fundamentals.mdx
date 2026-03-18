@@ -1,0 +1,38 @@
+---
+id: counting-fundamentals
+title: Counting Fundamentals
+author: USAMO Guide Team
+description: Rule of product, basic permutations and combinations, and careful casework.
+prerequisites: []
+---
+
+## Overview
+
+Counting problems reward clear structure. Break a task into steps, multiply
+choices, and use symmetry to simplify.
+
+## Key Ideas
+
+- Rule of product: if step 1 has $a$ choices and step 2 has $b$ choices, there
+  are $ab$ total outcomes.
+- $\binom{n}{k}$ counts $k$-element subsets of an $n$-element set.
+- When cases overlap, use inclusion-exclusion.
+
+## Worked Example
+
+How many 3-digit numbers have strictly increasing digits?
+
+Choose any 3 distinct digits from $\{0,1,2,\ldots,9\}$. There are
+$\binom{10}{3}$ choices. Each choice determines exactly one increasing number,
+but we must exclude those with a leading $0$. If $0$ is included, the number
+starts with $0$ and is not 3-digit. The number of invalid choices is
+$\binom{9}{2}$. So the answer is $\binom{10}{3} - \binom{9}{2} = 120 - 36 = 84$.
+
+## Common Pitfalls
+
+- Double-counting when order does not matter.
+- Ignoring leading-zero restrictions.
+
+## Practice Problems
+
+<Problems problems="practice" />

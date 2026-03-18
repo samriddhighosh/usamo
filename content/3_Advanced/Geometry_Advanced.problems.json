@@ -1,0 +1,34 @@
+{
+  "MODULE_ID": "geometry-advanced",
+  "practice": [
+    {
+      "uniqueId": "aime-2015ii-10",
+      "name": "Problem 10 (2015 AIME II)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2015_AIME_II_Problems/Problem_10",
+      "source": "AIME",
+      "difficulty": "Very Hard",
+      "isStarred": true,
+      "tags": [
+        "Ceva",
+        "Power of a Point"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2017ii-15",
+      "name": "Problem 15 (2017 AIME II)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2017_AIME_II_Problems/Problem_15",
+      "source": "AIME",
+      "difficulty": "Insane",
+      "isStarred": false,
+      "tags": [
+        "Homothety"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

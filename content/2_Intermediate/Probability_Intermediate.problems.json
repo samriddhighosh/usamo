@@ -1,0 +1,33 @@
+{
+  "MODULE_ID": "probability-intermediate",
+  "practice": [
+    {
+      "uniqueId": "amc12-2019b-14",
+      "name": "Problem 14 (2019 AMC 12B)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2019_AMC_12B_Problems/Problem_14",
+      "source": "AMC 12",
+      "difficulty": "Normal",
+      "isStarred": true,
+      "tags": [
+        "Conditional Probability"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2017i-9",
+      "name": "Problem 9 (2017 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2017_AIME_I_Problems/Problem_9",
+      "source": "AIME",
+      "difficulty": "Hard",
+      "isStarred": false,
+      "tags": [
+        "Expected Value"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

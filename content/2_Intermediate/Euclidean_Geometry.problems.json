@@ -1,0 +1,34 @@
+{
+  "MODULE_ID": "euclidean-geometry",
+  "practice": [
+    {
+      "uniqueId": "amc12-2017b-12",
+      "name": "Problem 12 (2017 AMC 12B)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2017_AMC_12B_Problems/Problem_12",
+      "source": "AMC 12",
+      "difficulty": "Normal",
+      "isStarred": true,
+      "tags": [
+        "Circles",
+        "Angles"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2018i-7",
+      "name": "Problem 7 (2018 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2018_AIME_I_Problems/Problem_7",
+      "source": "AIME",
+      "difficulty": "Hard",
+      "isStarred": false,
+      "tags": [
+        "Power of a Point"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

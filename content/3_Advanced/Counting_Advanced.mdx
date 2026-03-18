@@ -1,0 +1,27 @@
+---
+id: counting-advanced
+title: Advanced Counting
+author: USAMO Guide Team
+description: Bijections, recursion, and invariants for AIME-level counting.
+prerequisites: ["advanced-counting"]
+---
+
+## Overview
+
+Advanced counting often uses bijections or recursive structure. The goal is to
+rephrase the problem into a simpler counting model.
+
+## Key Ideas
+
+- Bijection: count a set by mapping it to another set of known size.
+- Recursion: count size $n$ objects by splitting into smaller sizes.
+- Invariants help track what must remain constant across transformations.
+
+## Worked Example
+
+Let $a_n$ be the number of binary strings of length $n$ with no consecutive $1$'s.
+Then $a_n=a_{n-1}+a_{n-2}$ by considering the last digit. This is Fibonacci.
+
+## Practice Problems
+
+<Problems problems="practice" />

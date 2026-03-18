@@ -1,0 +1,34 @@
+{
+  "MODULE_ID": "olympiad-number-theory",
+  "practice": [
+    {
+      "uniqueId": "usamo-2011-4",
+      "name": "Problem 4 (2011 USAMO)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2011_USAMO_Problems/Problem_4",
+      "source": "USAMO",
+      "difficulty": "Insane",
+      "isStarred": true,
+      "tags": [
+        "Number Theory",
+        "Orders"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "usamo-2016-2",
+      "name": "Problem 2 (2016 USAMO)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2016_USAMO_Problems/Problem_2",
+      "source": "USAMO",
+      "difficulty": "Very Hard",
+      "isStarred": false,
+      "tags": [
+        "Number Theory"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

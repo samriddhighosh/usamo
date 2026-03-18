@@ -1,0 +1,34 @@
+{
+  "MODULE_ID": "inequalities-advanced",
+  "practice": [
+    {
+      "uniqueId": "aime-2017i-12",
+      "name": "Problem 12 (2017 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2017_AIME_I_Problems/Problem_12",
+      "source": "AIME",
+      "difficulty": "Very Hard",
+      "isStarred": true,
+      "tags": [
+        "Cauchy-Schwarz",
+        "Inequalities"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2016i-10",
+      "name": "Problem 10 (2016 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2016_AIME_I_Problems/Problem_10",
+      "source": "AIME",
+      "difficulty": "Hard",
+      "isStarred": false,
+      "tags": [
+        "AM-GM"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "MODULE_ID": "complex-numbers",
+  "practice": [
+    {
+      "uniqueId": "aime-2013ii-8",
+      "name": "Problem 8 (2013 AIME II)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2013_AIME_II_Problems/Problem_8",
+      "source": "AIME",
+      "difficulty": "Very Hard",
+      "isStarred": true,
+      "tags": [
+        "Complex Numbers",
+        "Roots of Unity"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2018ii-4",
+      "name": "Problem 4 (2018 AIME II)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2018_AIME_II_Problems/Problem_4",
+      "source": "AIME",
+      "difficulty": "Hard",
+      "isStarred": false,
+      "tags": [
+        "Polar Form"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

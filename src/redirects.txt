@@ -1,0 +1,2 @@
+# FROM-URL	TO-URL
+/liveupdate	/editor

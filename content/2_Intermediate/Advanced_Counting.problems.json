@@ -1,0 +1,34 @@
+{
+  "MODULE_ID": "advanced-counting",
+  "practice": [
+    {
+      "uniqueId": "amc12-2018a-16",
+      "name": "Problem 16 (2018 AMC 12A)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2018_AMC_12A_Problems/Problem_16",
+      "source": "AMC 12",
+      "difficulty": "Hard",
+      "isStarred": true,
+      "tags": [
+        "Combinatorics",
+        "Casework"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2015i-9",
+      "name": "Problem 9 (2015 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2015_AIME_I_Problems/Problem_9",
+      "source": "AIME",
+      "difficulty": "Hard",
+      "isStarred": false,
+      "tags": [
+        "Inclusion-Exclusion"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

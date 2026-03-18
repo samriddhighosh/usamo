@@ -1,0 +1,33 @@
+{
+  "MODULE_ID": "number-theory-intermediate",
+  "practice": [
+    {
+      "uniqueId": "amc12-2016a-12",
+      "name": "Problem 12 (2016 AMC 12A)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2016_AMC_12A_Problems/Problem_12",
+      "source": "AMC 12",
+      "difficulty": "Normal",
+      "isStarred": true,
+      "tags": [
+        "Modular Arithmetic"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2019i-4",
+      "name": "Problem 4 (2019 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2019_AIME_I_Problems/Problem_4",
+      "source": "AIME",
+      "difficulty": "Hard",
+      "isStarred": false,
+      "tags": [
+        "Diophantine"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

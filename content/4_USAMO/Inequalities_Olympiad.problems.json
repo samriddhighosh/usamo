@@ -1,0 +1,33 @@
+{
+  "MODULE_ID": "inequalities-olympiad",
+  "practice": [
+    {
+      "uniqueId": "usamo-2013-1",
+      "name": "Problem 1 (2013 USAMO)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2013_USAMO_Problems/Problem_1",
+      "source": "USAMO",
+      "difficulty": "Very Hard",
+      "isStarred": true,
+      "tags": [
+        "Inequalities"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "usamo-2018-1",
+      "name": "Problem 1 (2018 USAMO)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2018_USAMO_Problems/Problem_1",
+      "source": "USAMO",
+      "difficulty": "Very Hard",
+      "isStarred": false,
+      "tags": [
+        "Inequalities"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

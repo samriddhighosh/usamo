@@ -1,0 +1,29 @@
+{
+  "MODULE_ID": "strategy-writeup",
+  "practice": [
+    {
+      "uniqueId": "custom-writeup-1",
+      "name": "Write-up critique: inequality proof",
+      "url": "https://usamo.guide/#custom-writeup-1",
+      "source": "Custom",
+      "difficulty": "Normal",
+      "isStarred": true,
+      "tags": ["Proof", "Write-up"],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "custom-writeup-2",
+      "name": "Write-up outline: geometry problem",
+      "url": "https://usamo.guide/#custom-writeup-2",
+      "source": "Custom",
+      "difficulty": "Normal",
+      "isStarred": false,
+      "tags": ["Proof", "Strategy"],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

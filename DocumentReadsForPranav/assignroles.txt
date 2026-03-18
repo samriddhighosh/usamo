@@ -1,0 +1,55 @@
+Here are exact, minimal steps to assign roles in Supabase.
+
+**1) Get the user’s `id`**
+Run this in Supabase SQL editor (or use the Auth Users table UI):
+```sql
+select id, email
+from auth.users
+order by created_at desc;
+```
+Copy the `id` for the target user.
+
+**2) Get role IDs**
+```sql
+select id, name
+from public.roles
+order by name;
+```
+Copy the `id` for the role you want (`admin`, `grader`, `problem_manager`).
+
+**3) Assign the role**
+```sql
+insert into public.user_roles (user_id, role_id)
+values ('<USER_ID>', '<ROLE_ID>')
+on conflict do nothing;
+```
+
+**Examples**
+Admin:
+```sql
+insert into public.user_roles (user_id, role_id)
+values ('USER_UUID', (select id from public.roles where name = 'admin'))
+on conflict do nothing;
+```
+
+Problem manager:
+```sql
+insert into public.user_roles (user_id, role_id)
+values ('USER_UUID', (select id from public.roles where name = 'problem_manager'))
+on conflict do nothing;
+```
+
+Grader:
+```sql
+insert into public.user_roles (user_id, role_id)
+values ('USER_UUID', (select id from public.roles where name = 'grader'))
+on conflict do nothing;
+```
+
+**4) Verify**
+```sql
+select ur.user_id, r.name
+from public.user_roles ur
+join public.roles r on r.id = ur.role_id
+where ur.user_id = 'USER_UUID';
+```

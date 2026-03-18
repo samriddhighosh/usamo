@@ -1,0 +1,35 @@
+{
+  "MODULE_ID": "proof-writing-basics",
+  "practice": [
+    {
+      "uniqueId": "usamo-2011-1",
+      "name": "Problem 1 (2011 USAMO)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2011_USAMO_Problems/Problem_1",
+      "source": "USAMO",
+      "difficulty": "Very Hard",
+      "isStarred": true,
+      "tags": [
+        "Proof",
+        "Algebra"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "usamo-2012-1",
+      "name": "Problem 1 (2012 USAMO)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2012_USAMO_Problems/Problem_1",
+      "source": "USAMO",
+      "difficulty": "Very Hard",
+      "isStarred": false,
+      "tags": [
+        "Proof",
+        "Number Theory"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

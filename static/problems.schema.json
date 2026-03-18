@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://usamo.guide/problems.schema.json",
+  "title": "Problem Data",
+  "description": "Stores the problems (and their solutions) associated with a module.",
+  "type": "object",
+  "properties": {
+    "MODULE_ID": {
+      "type": "string"
+    }
+  },
+  "propertyNames": {
+    "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+  },
+  "additionalProperties": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "uniqueId": {
+          "description": "The unique ID of the problem. This MUST be auto-generated based on the problem information to maintain consistency.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the problem, with NO source info whatsoever. Names should be unique within a source; if multiple problems share a name, add a clarifier.",
+          "type": "string"
+        },
+        "url": { "description": "The URL to the problem.", "type": "string" },
+        "source": {
+          "description": "Stores the problems (and their solutions) associated with a module.",
+          "type": "string",
+          "enum": [
+            "AMC 8",
+            "AMC 10",
+            "AMC 12",
+            "AIME",
+            "USAMO",
+            "AoPS Wiki",
+            "MAA",
+            "Custom"
+          ]
+        },
+        "difficulty": {
+          "description": "The difficulty of a problem, _relative to the module it is in_.",
+          "type": "string",
+          "enum": ["Very Easy", "Easy", "Normal", "Hard", "Very Hard", "Insane"]
+        },
+        "isStarred": {
+          "description": "Whether or not the problem should be starred in the module problem table.",
+          "type": "boolean"
+        },
+        "tags": {
+          "description": "Tags for the problem. Reuse existing tags when possible.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "solutionMetadata": {
+          "description": "Metadata storing information about the internal solution.",
+          "type": "object",
+          "properties": {
+            "kind": {
+              "description": "The type of the solution.",
+              "type": "string",
+              "enum": [
+                "autogen-label-from-site",
+                "internal",
+                "link",
+                "none",
+                "in-module",
+                "sketch"
+              ]
+            },
+            "hasHints": { "type": "boolean" }
+          },
+          "required": ["kind"]
+        }
+      },
+      "required": [
+        "uniqueId",
+        "name",
+        "url",
+        "source",
+        "difficulty",
+        "isStarred",
+        "tags",
+        "solutionMetadata"
+      ]
+    }
+  }
+}

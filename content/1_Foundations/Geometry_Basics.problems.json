@@ -1,0 +1,35 @@
+{
+  "MODULE_ID": "geometry-basics",
+  "practice": [
+    {
+      "uniqueId": "amc8-2016-14",
+      "name": "Problem 14 (2016 AMC 8)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2016_AMC_8_Problems/Problem_14",
+      "source": "AMC 8",
+      "difficulty": "Easy",
+      "isStarred": true,
+      "tags": [
+        "Geometry",
+        "Angles"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "amc10-2017a-9",
+      "name": "Problem 9 (2017 AMC 10A)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2017_AMC_10A_Problems/Problem_9",
+      "source": "AMC 10",
+      "difficulty": "Easy",
+      "isStarred": false,
+      "tags": [
+        "Triangles",
+        "Area"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

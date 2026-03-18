@@ -1,0 +1,34 @@
+{
+  "MODULE_ID": "inequalities",
+  "practice": [
+    {
+      "uniqueId": "amc10-2015b-20",
+      "name": "Problem 20 (2015 AMC 10B)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2015_AMC_10B_Problems/Problem_20",
+      "source": "AMC 10",
+      "difficulty": "Hard",
+      "isStarred": true,
+      "tags": [
+        "AM-GM",
+        "Algebra"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "amc12-2018b-19",
+      "name": "Problem 19 (2018 AMC 12B)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2018_AMC_12B_Problems/Problem_19",
+      "source": "AMC 12",
+      "difficulty": "Hard",
+      "isStarred": false,
+      "tags": [
+        "Cauchy-Schwarz"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

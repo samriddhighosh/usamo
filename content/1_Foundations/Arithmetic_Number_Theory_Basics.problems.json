@@ -1,0 +1,35 @@
+{
+  "MODULE_ID": "arithmetic-nt-basics",
+  "practice": [
+    {
+      "uniqueId": "amc8-2019-6",
+      "name": "Problem 6 (2019 AMC 8)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems/Problem_6",
+      "source": "AMC 8",
+      "difficulty": "Easy",
+      "isStarred": true,
+      "tags": [
+        "Divisibility",
+        "Remainders"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "amc10-2018a-4",
+      "name": "Problem 4 (2018 AMC 10A)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2018_AMC_10A_Problems/Problem_4",
+      "source": "AMC 10",
+      "difficulty": "Easy",
+      "isStarred": false,
+      "tags": [
+        "GCD",
+        "Prime Factorization"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

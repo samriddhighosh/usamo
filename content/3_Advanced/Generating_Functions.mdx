@@ -1,0 +1,30 @@
+---
+id: generating-functions
+title: Generating Functions (Intro)
+author: USAMO Guide Team
+description: Translate counting into algebra using power series.
+prerequisites: ["counting-advanced", "advanced-algebra"]
+---
+
+## Overview
+
+Generating functions encode sequences into algebraic objects. Even simple
+applications can simplify counting and recurrence problems.
+
+## Key Ideas
+
+- The coefficient of $x^n$ in $(1+x+x^2+\cdots)^k$ counts solutions to
+  $x_1+\cdots+x_k=n$ with nonnegative integers.
+- Finite options become finite polynomials like $(1+x+x^2)$. 
+- Multiplying series corresponds to combining choices.
+
+## Worked Example
+
+Count solutions to $a+b+c=5$ with $a,b,c\ge0$.
+
+The generating function is $(1+x+x^2+\cdots)^3=\frac{1}{(1-x)^3}$. The
+coefficient of $x^5$ is $\binom{5+3-1}{3-1}=21$.
+
+## Practice Problems
+
+<Problems problems="practice" />

@@ -1,0 +1,38 @@
+---
+id: arithmetic-nt-basics
+title: Arithmetic and Number Theory Basics
+author: USAMO Guide Team
+description: Divisibility, primes, gcd, and modular arithmetic intuition for AMC 8 and AMC 10.
+prerequisites: []
+---
+
+## Overview
+
+Number sense is the backbone of contest math. You should be comfortable with
+divisibility tests, prime factorizations, and the Euclidean algorithm. Many
+problems reduce to checking a remainder or rewriting a number in prime powers.
+
+## Key Ideas
+
+- If $a \mid b$ and $a \mid c$, then $a \mid (bx + cy)$ for any integers $x, y$.
+- The Euclidean algorithm computes $\gcd(a, b)$ quickly by repeated remainders.
+- Working modulo $n$ lets you replace numbers by their remainders without
+  changing divisibility information.
+
+## Worked Example
+
+Find the remainder of $7^{2026}$ when divided by $9$.
+
+Because $7 \equiv -2 \pmod 9$, we have $7^{2026} \equiv (-2)^{2026}$.
+Since $2026$ is even, $(-2)^{2026} = 2^{2026}$. We can use the cycle
+$2^1, 2^2, 2^3, 2^4 \equiv 2, 4, 8, 7 \pmod 9$ with period $6$. Compute
+$2026 \equiv 2026 - 6 \cdot 337 = 4 \pmod 6$, so the remainder is $2^4 \equiv 7$.
+
+## Common Pitfalls
+
+- Forgetting that congruence only preserves addition and multiplication.
+- Mixing up $\gcd$ and $\operatorname{lcm}$ relationships.
+
+## Practice Problems
+
+<Problems problems="practice" />

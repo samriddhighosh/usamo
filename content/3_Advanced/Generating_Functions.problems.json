@@ -1,0 +1,33 @@
+{
+  "MODULE_ID": "generating-functions",
+  "practice": [
+    {
+      "uniqueId": "aime-2012i-13",
+      "name": "Problem 13 (2012 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2012_AIME_I_Problems/Problem_13",
+      "source": "AIME",
+      "difficulty": "Very Hard",
+      "isStarred": true,
+      "tags": [
+        "Generating Functions"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2011i-11",
+      "name": "Problem 11 (2011 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2011_AIME_I_Problems/Problem_11",
+      "source": "AIME",
+      "difficulty": "Very Hard",
+      "isStarred": false,
+      "tags": [
+        "Counting"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

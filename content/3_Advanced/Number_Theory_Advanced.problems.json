@@ -1,0 +1,35 @@
+{
+  "MODULE_ID": "number-theory-advanced",
+  "practice": [
+    {
+      "uniqueId": "aime-2014i-12",
+      "name": "Problem 12 (2014 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2014_AIME_I_Problems/Problem_12",
+      "source": "AIME",
+      "difficulty": "Very Hard",
+      "isStarred": true,
+      "tags": [
+        "Orders",
+        "Modular Arithmetic"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2016ii-10",
+      "name": "Problem 10 (2016 AIME II)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2016_AIME_II_Problems/Problem_10",
+      "source": "AIME",
+      "difficulty": "Very Hard",
+      "isStarred": false,
+      "tags": [
+        "Diophantine",
+        "LTE"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

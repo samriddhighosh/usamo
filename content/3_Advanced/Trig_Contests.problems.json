@@ -1,0 +1,34 @@
+{
+  "MODULE_ID": "trig-contests",
+  "practice": [
+    {
+      "uniqueId": "aime-2019i-8",
+      "name": "Problem 8 (2019 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2019_AIME_I_Problems/Problem_8",
+      "source": "AIME",
+      "difficulty": "Hard",
+      "isStarred": true,
+      "tags": [
+        "Trigonometry",
+        "Law of Cosines"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2014ii-3",
+      "name": "Problem 3 (2014 AIME II)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2014_AIME_II_Problems/Problem_3",
+      "source": "AIME",
+      "difficulty": "Normal",
+      "isStarred": false,
+      "tags": [
+        "Trig Identities"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

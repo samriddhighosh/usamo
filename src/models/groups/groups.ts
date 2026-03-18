@@ -1,0 +1,36 @@
+export type GroupData = {
+  id: string;
+  name: string;
+  description: string;
+  ownerIds: string[];
+  adminIds: string[];
+  memberIds: string[];
+  postOrdering: string[];
+};
+
+export enum GroupPermission {
+  MEMBER = 'member',
+  ADMIN = 'admin',
+  OWNER = 'owner',
+}
+
+export type JoinGroupLink = {
+  id: string;
+  groupId: string;
+  revoked: boolean;
+  numUses: number;
+  maxUses: number | null;
+  expirationTime: string | null;
+  usedBy: string[];
+  author: string;
+};
+
+export const isUserAdminOfGroup = (
+  group: GroupData | undefined,
+  userId: string | undefined
+): boolean => {
+  return !!(
+    userId &&
+    (!!group?.adminIds.includes(userId) || !!group?.ownerIds.includes(userId))
+  );
+};

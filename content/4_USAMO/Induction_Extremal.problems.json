@@ -1,0 +1,34 @@
+{
+  "MODULE_ID": "induction-extremal",
+  "practice": [
+    {
+      "uniqueId": "usamo-2014-2",
+      "name": "Problem 2 (2014 USAMO)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2014_USAMO_Problems/Problem_2",
+      "source": "USAMO",
+      "difficulty": "Insane",
+      "isStarred": true,
+      "tags": [
+        "Induction",
+        "Extremal"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "usamo-2010-2",
+      "name": "Problem 2 (2010 USAMO)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2010_USAMO_Problems/Problem_2",
+      "source": "USAMO",
+      "difficulty": "Very Hard",
+      "isStarred": false,
+      "tags": [
+        "Induction"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+---
+id: number-theory-advanced
+title: Strong Number Theory
+author: USAMO Guide Team
+description: Orders, lifting exponents, and tougher Diophantine equations for AIME.
+prerequisites: ["number-theory-intermediate"]
+---
+
+## Overview
+
+Advanced number theory uses structure in modular arithmetic and prime powers.
+Orders and lifting techniques often simplify exponent problems.
+
+## Key Ideas
+
+- If $a^k\equiv1\pmod n$, the least such $k$ is the order of $a$ mod $n$.
+- LTE (lifting the exponent) helps with $v_p(a^n-b^n)$ when $p$ divides $a-b$.
+- Factorization and parity arguments are constant companions.
+
+## Worked Example
+
+Find the largest $k$ with $2^k \mid 3^{12}-1$.
+
+Because $3^2-1=8$, LTE gives $v_2(3^{12}-1)=v_2(3^2-1)+v_2(12)=3+2=5$.
+So $k=5$.
+
+## Practice Problems
+
+<Problems problems="practice" />

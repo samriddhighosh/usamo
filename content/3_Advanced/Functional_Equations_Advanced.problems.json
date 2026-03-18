@@ -1,0 +1,34 @@
+{
+  "MODULE_ID": "functional-equations-advanced",
+  "practice": [
+    {
+      "uniqueId": "aime-2015i-14",
+      "name": "Problem 14 (2015 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2015_AIME_I_Problems/Problem_14",
+      "source": "AIME",
+      "difficulty": "Very Hard",
+      "isStarred": true,
+      "tags": [
+        "Functional Equations"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "aime-2010i-9",
+      "name": "Problem 9 (2010 AIME I)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2010_AIME_I_Problems/Problem_9",
+      "source": "AIME",
+      "difficulty": "Very Hard",
+      "isStarred": false,
+      "tags": [
+        "Functional Equations",
+        "Substitution"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}

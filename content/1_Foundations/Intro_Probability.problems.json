@@ -1,0 +1,35 @@
+{
+  "MODULE_ID": "intro-probability",
+  "practice": [
+    {
+      "uniqueId": "amc8-2018-17",
+      "name": "Problem 17 (2018 AMC 8)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2018_AMC_8_Problems/Problem_17",
+      "source": "AMC 8",
+      "difficulty": "Normal",
+      "isStarred": true,
+      "tags": [
+        "Probability",
+        "Counting"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    },
+    {
+      "uniqueId": "amc10-2015a-12",
+      "name": "Problem 12 (2015 AMC 10A)",
+      "url": "https://artofproblemsolving.com/wiki/index.php/2015_AMC_10A_Problems/Problem_12",
+      "source": "AMC 10",
+      "difficulty": "Normal",
+      "isStarred": false,
+      "tags": [
+        "Probability",
+        "Complement"
+      ],
+      "solutionMetadata": {
+        "kind": "none"
+      }
+    }
+  ]
+}
